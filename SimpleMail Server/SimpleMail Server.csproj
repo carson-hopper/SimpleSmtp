@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeIdentifiers>linux-x64;win10-x64</RuntimeIdentifiers>
+    <RootNamespace>SimpleMail_Server</RootNamespace>
+    <StartupObject>SimpleMail_Server.Program</StartupObject>
+    <AssemblyName>SimpleMailServer</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTargets>AnyCPU</PlatformTargets>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MimeKitLite" Version="2.10.1" />
+  </ItemGroup>
+  
+</Project>
